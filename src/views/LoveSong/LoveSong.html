@@ -1,0 +1,47 @@
+<div class="loveSongPag">
+    <MusicBox />
+    <!-- <div class="musicBox">
+        <div class="musicList">
+            <div class="musicListTitle">歌曲</div>
+            <div
+                class="musicContent"
+                v-for="(m,index) in  filteredRows.slice(pageStart, pageStart + countOfPage)"
+                @click="playMusic(index)"
+            >
+                <div
+                    class="playIcon"
+                    :class="[{playIconSelect:playMusicId == index && currPage == clickCurrPage}]"
+                ></div><a
+                    class="playName"
+                    :title="m.singname +' - '+ m.singer"
+                >{{m.singname}} - {{m.singer}}</a>
+            </div>
+            <div class="pagination">
+                <ul>
+                    <li
+                        v-bind:class="{'disabled': (currPage === 1)}"
+                        @click.prevent="setPage(currPage-1)"
+                    ><a href="#">Prev</a></li>
+                    <li
+                        v-for="n in totalPage"
+                        v-bind:class="{'active': (currPage === (n))}"
+                        @click.prevent="setPage(n)"
+                    ><a href="#">{{n}}</a></li>
+                    <li
+                        v-bind:class="{'disabled': (currPage === totalPage)}"
+                        @click.prevent="setPage(currPage+1)"
+                    ><a href="#">Next</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="musicPlay">
+            <div
+                class="musicPlayBox"
+                id="player"
+            >
+
+            </div>
+        </div>
+    </div> -->
+</div>

@@ -1,0 +1,240 @@
+$fontColor:#777777;
+$yellow:#FCD200;
+$borderColor:#A9A9A9;
+$paginationfontColor:#d8450b;
+
+.musicBox {
+    display: flex;
+
+    .musicList {
+        width: 350px;
+        margin-right: 80px;
+
+        .musicListTitle {
+            width: 350px;
+            height: 50px;
+            background-color: #fff;
+            line-height: 50px;
+            font-size: 20px;
+            border-top: 1px dotted $borderColor;
+            border-bottom: 1px dotted $borderColor;
+            margin-bottom: 30px;
+        }
+
+        .musicContentBox {
+            height: 300px;
+            overflow-y: scroll;
+        }
+
+        .musicContent {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            border-bottom: 1px dotted $borderColor;
+            text-align: left;
+            display: flex;
+            position: relative;
+            color: $fontColor;
+            cursor: pointer;
+
+            .playIcon {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 20px;
+                background: url(../../assets/playIcon.png);
+                margin: 0 15px;
+            }
+
+            .playIconSelect {
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 20px;
+                background: url(../../assets/playIconOn.png);
+                margin: 0 15px;
+
+                &+a {
+                    color: $yellow;
+                }
+            }
+
+            // .playIconSelect + a {
+            //     color: $yellow;
+            // }
+            .playName {
+                width: 85%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+        }
+
+        .pagination {
+            width: 100%;
+            height: 40px;
+
+            ul {
+                text-align: center;
+                display: flex;
+
+                li {
+                    list-style-type: none;
+
+                    a {
+                        text-decoration: none;
+                        display: block;
+                        color: $paginationfontColor;
+                        line-height: 38px;
+                        padding: 0 10px;
+                        background-color: #ffffff;
+                        border: 1px solid #dddddd;
+                        border-left-width: 0;
+
+                        &:hover {
+                            background-color: #f5f5f5;
+                        }
+                    }
+
+                    &:first-child {
+                        a {
+                            border-left-width: 1px;
+                        }
+                    }
+                }
+
+                .disabled,
+                .active {
+                    a {
+                        color: #999999;
+                        cursor: default;
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+
+    .musicPlay {
+        width: 1210px;
+        height: 35vmax;
+        border: 1px dotted $borderColor;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        .musicPlayBox {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+    }
+
+    .el-tabs__nav {
+        z-index: 0;
+    }
+
+    .el-tabs--card>.el-tabs__header {
+        border-bottom: none;
+
+        .el-tabs__item {
+            border-bottom: 1px dotted #A9A9A9;
+        }
+
+        .el-tabs__nav {
+            border: none;
+            border-bottom: none;
+        }
+
+        .el-tabs__item {
+            color: #777777;
+            border-left: none;
+            font-size: 20px;
+            font-family: "Segoe UI", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1";
+            font-weight: bold;
+            // &:first-child {
+            //     border-left: none;
+            // }
+        }
+
+        .el-tabs__item.is-active {
+            color: #D8450B;
+            border: 1px dotted #A9A9A9;
+            border-bottom: none;
+            background-color: #FEF9FD;
+        }
+    }
+
+    .el-tab-pane {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #777777;
+            margin: 10px 10px;
+        }
+
+        .playTypeSelect {
+            color: #D8450B;
+        }
+    }
+
+    .straight {
+        display: none;
+        position: absolute;
+        width: 350px;
+        top: 240px;
+        left: 140px;
+    }
+}
+
+@media screen and (max-width: 1610px) {
+    .musicBox {
+        .musicList {
+            position: relative;
+            top: 240px;
+        }
+        .musicPlay {
+            height: 45vmax;
+        }
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .musicBox {
+        flex-flow: wrap-reverse;
+
+        .musicList {
+            // top: 50px;
+            width: 100%;
+            top: 250px;
+            margin-right: 0;
+
+            .musicListTitle {
+                width: 100%;
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 10px;
+    border-radius: 10px;
+    background: #d8450b;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}

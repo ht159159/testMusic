@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <HeaderNavStraight />
+    <!-- <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>-->
+    <transition>
+    <router-view :key="key" />
+    </transition>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from "./views/Header/Header.vue";
+import HeaderNavStraight from "./components/Header_nav_straight/Header_nav_straight.vue";
 export default {
-  name: 'app',
   components: {
-    HelloWorld
-  }
-}
+    Header,
+    HeaderNavStraight
+  },
+	computed:{
+	    key(){
+	        return this.$route.path + Math.random();
+	    }
+	}
+};
 </script>
 
 <style>
+body {
+  margin: 0;
+  padding-top: 190px;
+  overflow-x: scroll;
+   background: #f9f9f9 url(./assets/page-bg-1.jpg);
+}
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Segoe UI", "Microsoft Yahei", "微软雅黑";
+  font-weight: bold;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  /* background: #f9f9f9 url(./assets/page-bg-1.jpg); */
+  /* overflow-x: scroll; */
 }
 </style>

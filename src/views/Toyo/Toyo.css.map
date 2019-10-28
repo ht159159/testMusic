@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,CAAC;EACL,OAAO,EAAE,UAAU;CACtB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,QAAQ,CAAC;IACL,OAAO,EAAE,QAAQ;GACpB;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,QAAQ,CAAC;IACL,OAAO,EAAE,QAAQ;GACpB",
+    "sources": [
+        "Toyo.scss"
+    ],
+    "names": [],
+    "file": "Toyo.css"
+}

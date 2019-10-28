@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,OAAO,EAAE,UAAU;CACtB;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,aAAa,CAAC;IACV,OAAO,EAAE,QAAQ;GACpB;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,aAAa,CAAC;IACV,OAAO,EAAE,QAAQ;GACpB",
+    "sources": [
+        "Cantonese.scss"
+    ],
+    "names": [],
+    "file": "Cantonese.css"
+}

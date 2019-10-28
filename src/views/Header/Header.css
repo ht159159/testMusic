@@ -1,0 +1,76 @@
+.header {
+  width: 100%;
+  height: 190px;
+  background-color: #FCD200;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header .headerBox {
+  width: 100%;
+  height: 100%;
+}
+
+.header .headerBox .logo {
+  width: 154px;
+  height: 75px;
+  background-color: aquamarine;
+  background: url(../../assets/muzicLogo.png) no-repeat;
+  background-size: contain;
+  position: relative;
+  top: 50px;
+  left: 140px;
+}
+
+.header .colorBarBox {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+.header .colorBarBox .colorBar-1 {
+  width: 100%;
+  height: 5px;
+  background-color: #414141;
+}
+
+.header .colorBarBox .colorBar-2 {
+  width: 100%;
+  height: 3px;
+  background-color: #d8450b;
+}
+
+@media screen and (max-width: 1610px) {
+  html body {
+    padding-top: 150px;
+  }
+  .header {
+    height: 100px;
+  }
+  .header .headerBox .logo {
+    width: 110px;
+    height: 55px;
+    top: 20px;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  html body {
+    padding-top: 100px;
+  }
+  .header {
+    height: 50px;
+  }
+  .header .headerBox .logo {
+    width: 50px;
+    height: 26px;
+    top: 10px;
+    left: 0;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

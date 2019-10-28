@@ -1,0 +1,124 @@
+.nav {
+  top: 30px;
+  right: 140px;
+}
+
+.nav .horizontal {
+  position: absolute;
+  top: 25px;
+  right: 140px;
+}
+
+.nav .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.nav .navList .navListTitle {
+  margin-right: 35px;
+  position: relative;
+  cursor: context-menu;
+}
+
+.nav .navList .navListTitle::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 38px;
+  left: -40px;
+  top: 2px;
+  background: url(../../assets/titleBg.png) no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.nav .navList .navListConent {
+  margin-left: 30px;
+  color: #777777;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav .navList .navListConent:hover {
+  color: #fff;
+}
+
+.nav .navList .playTypeSelect {
+  color: #fff;
+}
+
+.nav .el-tabs__nav {
+  z-index: 0;
+}
+
+.nav .el-tabs--card > .el-tabs__header {
+  border-bottom: none;
+}
+
+.nav .el-tabs--card > .el-tabs__header .el-tabs__item {
+  border-bottom: 1px dotted #A9A9A9;
+}
+
+.nav .el-tabs--card > .el-tabs__header .el-tabs__nav {
+  border: none;
+  border-bottom: none;
+}
+
+.nav .el-tabs--card > .el-tabs__header .el-tabs__item {
+  color: #777777;
+  border-left: none;
+  font-size: 20px;
+  font-family: "Segoe UI", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1";
+  font-weight: bold;
+}
+
+.nav .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  color: #D8450B;
+  border: 1px dotted #A9A9A9;
+  border-bottom: none;
+  background-color: #FEF9FD;
+}
+
+.nav .el-tab-pane {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav .el-tab-pane a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #777777;
+  margin: 10px 10px;
+}
+
+.nav .el-tab-pane .playTypeSelect {
+  color: #D8450B;
+}
+
+.nav .straight {
+  display: none;
+  position: absolute;
+  width: 350px;
+  top: 240px;
+  left: 140px;
+}
+
+@media screen and (max-width: 1610px) {
+  .nav .horizontal {
+    display: none;
+  }
+  .nav .straight {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=Header_nav.css.map */

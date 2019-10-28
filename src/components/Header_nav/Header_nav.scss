@@ -1,0 +1,122 @@
+$fontColor:#777777;
+.nav {
+    // position: absolute;
+    top: 30px;
+    right: 140px;
+
+    .horizontal {
+        position: absolute;
+        top: 25px;
+        right: 140px;
+    }
+
+    .navList {
+        display: flex;
+        height: 40px;
+        // font-family:"Segoe UI", "Microsoft Yahei", "微软雅黑";
+        line-height: 40px;
+        font-size: 20px;
+        // font-weight:bold;
+        margin-bottom: 5px;
+        .navListTitle {
+            margin-right: 35px;
+            position: relative;
+            cursor: context-menu;
+            // background: url(../../assets/titleBg.png) no-repeat;
+            // background-size: contain;
+            &::after{
+                content: "";
+                position: absolute;
+                width: 120px;
+                height: 38px;
+                left: -40px;
+                top: 2px;
+                background: url(../../assets/titleBg.png) no-repeat;
+                background-size: contain;
+                z-index: -1;
+            }
+        }
+        .navListConent{
+            margin-left: 30px;
+            color: $fontColor;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover{
+                color: #fff;
+            }
+        }
+        .playTypeSelect{
+            color: #fff;
+        }
+    }
+    .el-tabs__nav {
+        z-index: 0;
+    }
+
+    .el-tabs--card>.el-tabs__header {
+        border-bottom: none;
+
+        .el-tabs__item {
+            border-bottom: 1px dotted #A9A9A9;
+        }
+
+        .el-tabs__nav {
+            border: none;
+            border-bottom: none;
+        }
+
+        .el-tabs__item {
+            color: #777777;
+            border-left: none;
+            font-size: 20px;
+            font-family: "Segoe UI", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1";
+            font-weight: bold;
+            // &:first-child {
+            //     border-left: none;
+            // }
+        }
+
+        .el-tabs__item.is-active {
+            color: #D8450B;
+            border: 1px dotted #A9A9A9;
+            border-bottom: none;
+            background-color: #FEF9FD;
+        }
+    }
+
+    .el-tab-pane {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #777777;
+            margin: 10px 10px;
+        }
+        .playTypeSelect{
+            color: #D8450B;
+        }
+    }
+    .straight{
+        display: none;
+        position: absolute;
+        width: 350px;
+        top: 240px;
+        left: 140px;
+    }
+}
+@media screen and (max-width: 1610px){
+    .nav {
+        .horizontal {
+    display: none;
+}
+
+.straight {
+    display: inline-block;
+}
+    }
+    
+}

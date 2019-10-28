@@ -1,0 +1,38 @@
+<div class="straight">
+    <div class="divBox">
+
+    </div>
+    <el-tabs
+        type="card"
+        stretch
+    >
+        <el-tab-pane
+            v-for="(n,nIndex) in navList"
+            :label=n.titleName
+        >
+
+            <router-link
+                class="navListConent"
+                :class="{playTypeSelect:checkId == cIndex && listId == nIndex}"
+                v-for="(c,cIndex) in n.navContent"
+                :to="c.link"
+                @click.native="listSelect(cIndex,nIndex)"
+            >
+                {{c.name}}
+            </router-link>
+
+        </el-tab-pane>
+        <!-- <el-tab-pane
+            label="新歌"
+            name="first"
+        >用户管理</el-tab-pane>
+        <el-tab-pane
+            label="排行"
+            name="second"
+        >配置管理</el-tab-pane>
+        <el-tab-pane
+            label="主題"
+            name="third"
+        >角色管理</el-tab-pane> -->
+    </el-tabs>
+</div>

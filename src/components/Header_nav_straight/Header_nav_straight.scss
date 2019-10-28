@@ -1,0 +1,109 @@
+.straight {
+    display: none;
+}
+
+.el-tabs {
+    width: 350px;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+
+    .el-tabs__nav {
+        z-index: 0;
+    }
+}
+
+.straight {
+    .el-tabs--card>.el-tabs__header {
+        border-bottom: none;
+
+        .el-tabs__item {
+            border-bottom: 1px dotted #A9A9A9;
+        }
+
+        .el-tabs__nav {
+            border: none;
+            border-bottom: none;
+        }
+
+        .el-tabs__item {
+            color: #777777;
+            border-left: none;
+            font-size: 20px;
+            font-family: "Segoe UI", "Microsoft Yahei", "\5FAE\8F6F\96C5\9ED1";
+            font-weight: bold;
+            // &:first-child {
+            //     border-left: none;
+            // }
+        }
+
+        .el-tabs__item.is-active {
+            color: #D8450B;
+            border: 1px dotted #A9A9A9;
+            border-bottom: none;
+            background-color: #FEF9FD;
+        }
+    }
+}
+
+
+.el-tab-pane {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: #777777;
+        margin: 10px 10px;
+    }
+
+    .playTypeSelect {
+        color: #D8450B;
+    }
+    .zoom-enter, .zoom-leave-to {
+        width: 0px;
+        height: 0px;
+      }
+      .zoom-enter-active, .zoom-leave-active {
+        transition: width 1s, height 1s;
+      }
+}
+
+@media screen and (max-width: 1610px) {
+
+
+    .straight {
+        display: flex;
+
+        .divBox {
+            width: 100%;
+            // background-color:red;
+        }
+    }
+}
+
+@media screen and (max-width: 1015px) {
+
+    .el-tabs {
+        position: relative;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .straight {
+        flex-flow: wrap;
+        width: 100%;
+        padding: 0px 10px;
+        box-sizing: border-box;
+        position: absolute;
+
+        .divBox {
+            width: 100%;
+            height: 45vmax;
+        }
+    }
+}

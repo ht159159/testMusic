@@ -1,0 +1,13 @@
+.graduationPag {
+    padding: 50px 140px;
+} 
+@media screen and (max-width:1610px) {
+    .graduationPag {
+        padding: 0px 50px;
+    }
+}
+@media screen and (max-width:1015px) {
+    .graduationPag {
+        padding: 0px 10px;
+    }
+}

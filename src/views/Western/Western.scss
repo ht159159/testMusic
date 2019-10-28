@@ -1,0 +1,13 @@
+.westernPag {
+    padding: 50px 140px;
+} 
+@media screen and (max-width:1610px) {
+    .westernPag {
+        padding: 0px 50px;
+    }
+}
+@media screen and (max-width:1015px) {
+    .westernPag {
+        padding: 0px 10px;
+    }
+}

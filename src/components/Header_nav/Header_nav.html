@@ -1,0 +1,73 @@
+<div class="nav">
+    <div class="horizontal">
+        <div
+            class="navList"
+            v-for="(n,nIndex) in navList"
+        >
+            <div class="navListTitle">{{n.titleName}}</div>
+            <router-link
+                class="navListConent"
+                :class="{playTypeSelect:checkId == cIndex && listId == nIndex}"
+                v-for="(c,cIndex) in n.navContent"
+                :to="c.link"
+                @click.native="listSelect(cIndex,nIndex)"
+            >{{c.name}}</router-link>
+            <!-- <li>
+                新歌
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                排行
+                <ul>
+                    <li></li>
+                </ul>
+            </li>
+            <li>
+                主題
+                <ul>
+                    <li></li>
+                </ul>
+            </li> -->
+        </div>
+    </div>
+    <!-- <div class="straight"> -->
+    <!-- <el-tabs
+        type="card"
+        stretch
+        @tab-click="test"
+        
+    >
+        <el-tab-pane
+            v-for="(n,nIndex) in navList"
+            :label=n.titleName
+            
+        >
+            
+                <router-link
+                class="navListConent"
+                :class="{playTypeSelect:checkId == cIndex && listId == nIndex}"
+                v-for="(c,cIndex) in n.navContent"
+                :to="c.link"
+                @click.native="listSelect(cIndex,nIndex)"
+                >
+                {{c.name}}
+            </router-link>
+        
+        </el-tab-pane> -->
+    <!-- <el-tab-pane
+            label="新歌"
+            name="first"
+        >用户管理</el-tab-pane>
+        <el-tab-pane
+            label="排行"
+            name="second"
+        >配置管理</el-tab-pane>
+        <el-tab-pane
+            label="主題"
+            name="third"
+        >角色管理</el-tab-pane> -->
+    <!-- </el-tabs> -->
+    <!-- </div> -->
+</div>

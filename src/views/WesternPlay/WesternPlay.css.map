@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,UAAU;CACtB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,eAAe,CAAC;IACZ,OAAO,EAAE,QAAQ;GACpB;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,eAAe,CAAC;IACZ,OAAO,EAAE,QAAQ;GACpB",
+    "sources": [
+        "WesternPlay.scss"
+    ],
+    "names": [],
+    "file": "WesternPlay.css"
+}

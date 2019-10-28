@@ -1,0 +1,16 @@
+.chinesePlayPag {
+  padding: 50px 140px;
+}
+
+@media screen and (max-width: 1610px) {
+  .chinesePlayPag {
+    padding: 0px 50px;
+  }
+}
+
+@media screen and (max-width: 1015px) {
+  .chinesePlayPag {
+    padding: 0px 10px;
+  }
+}
+/*# sourceMappingURL=ChinesePlay.css.map */

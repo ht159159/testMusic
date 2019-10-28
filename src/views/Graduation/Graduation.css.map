@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,cAAc,CAAC;EACX,OAAO,EAAE,UAAU;CACtB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,cAAc,CAAC;IACX,OAAO,EAAE,QAAQ;GACpB;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,cAAc,CAAC;IACX,OAAO,EAAE,QAAQ;GACpB",
+    "sources": [
+        "Graduation.scss"
+    ],
+    "names": [],
+    "file": "Graduation.css"
+}

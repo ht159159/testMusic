@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,CAAC;EACd,OAAO,EAAE,UAAU;CACtB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,iBAAiB,CAAC;IACd,OAAO,EAAE,QAAQ;GACpB;;;AAEL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,iBAAiB,CAAC;IACd,OAAO,EAAE,QAAQ;GACpB",
+    "sources": [
+        "CantonesePlay.scss"
+    ],
+    "names": [],
+    "file": "CantonesePlay.css"
+}
