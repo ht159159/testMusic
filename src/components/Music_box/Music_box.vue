@@ -4,7 +4,19 @@ export default {
   data() {
     return {
       playMusicId: null,
-      musicList: [],
+      musicList: [
+ { singname: "燭光泛舟", singer: "張津滌" ,playMusicUrl:'PKAgk7o4C4w'},
+      { singname: "假朋友真兄弟", singer: "熊仔．豹子膽" ,playMusicUrl:'08Ca5FAxThg'},
+      { singname: "柔柔的眼波柔柔的你", singer: "星月組合" ,playMusicUrl:'dTQmFgMOf8I'},
+      { singname: "一晃就老了", singer: "秋褲大叔(趙小兵)" ,playMusicUrl:'VgAB5FVHfZ8'},
+      { singname: "三千痴纏", singer: "莊心妍．富博洋" ,playMusicUrl:'VDBdBbRRVTk'},
+      { singname: "熬夜成癮", singer: "朱興東" ,playMusicUrl:'TY1icDvBgso'},
+      { singname: "類情人", singer: "梁靜茹" ,playMusicUrl:'b5GC68J2uDQ'},
+      { singname: "我好嗎", singer: "梁靜茹" ,playMusicUrl:'fa5XXI0OemE'},
+      { singname: "我比從前想你了", singer: "Bii" ,playMusicUrl:'WB7KVRtyctk'},
+      { singname: "都幾歲了", singer: "陳嘉樺" ,playMusicUrl:'BIGWEMk1J0I'}
+
+      ],
       musicListList: [],
       countOfPage: 5,
       currPage: 1,
@@ -144,12 +156,12 @@ export default {
       // let playMusic = playMusicIdname.singname + playMusicIdname.singer;
 
       let playMusic = t.musicList[index].singname + t.musicList[index].singer;
-
-      this.$axios
-        .get("http://192.168.6.246/api/account/" + playMusic)
-        .then(function(response) {
-          t.playMusicUrl = response.data[0].url;
-        });
+t.playMusicUrl = t.musicList[index].playMusicUrl;
+      // this.$axios
+      //   .get("http://192.168.6.246/api/account/" + playMusic)
+      //   .then(function(response) {
+      //     t.playMusicUrl = response.data[0].url;
+      //   });
       t.youtobeIf();
     },
     setPage: function(idx) {
