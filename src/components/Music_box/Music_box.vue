@@ -285,119 +285,123 @@ t.playMusicUrl = t.musicList[index].playMusicUrl;
     // if(){
 
     // }
-
-    if (this.key == "/") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/1")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/Taiwanese") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/2")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/Cantonese") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/3")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/Western") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/4")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/Toyo") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/5")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/ChineseNew") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r1")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/ChinesePlay") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r2")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/TaiwaneseNew") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r3")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/TaiwanesePlay") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r4")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/CantonesePlay") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r5")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/WesternPlay") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r6")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/ToyoPlay") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/r7")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/LoveHolday") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/t1")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/Tempo") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/t2")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/LoveSong") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/t3")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
-    if (this.key == "/Graduation") {
-      this.$axios
-        .get("http://192.168.6.246/api/account/t4")
-        .then(function(response) {
-          t.musicList = response.data;
-        });
-    }
+//  this.$axios
+//         .get("https://api.kkbox.com/v1.1/charts")
+//         .then(function(response) {
+//           console.log(response);
+//         });
+    // if (this.key == "/") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/1")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/Taiwanese") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/2")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/Cantonese") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/3")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/Western") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/4")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/Toyo") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/5")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/ChineseNew") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r1")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/ChinesePlay") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r2")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/TaiwaneseNew") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r3")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/TaiwanesePlay") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r4")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/CantonesePlay") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r5")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/WesternPlay") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r6")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/ToyoPlay") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/r7")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/LoveHolday") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/t1")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/Tempo") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/t2")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/LoveSong") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/t3")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
+    // if (this.key == "/Graduation") {
+    //   this.$axios
+    //     .get("http://192.168.6.246/api/account/t4")
+    //     .then(function(response) {
+    //       t.musicList = response.data;
+    //     });
+    // }
     // console.log(this.$route);
     // this.$axios
     //   .get("http://192.168.6.246/api/account/1")
