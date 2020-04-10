@@ -1,0 +1,96 @@
+.musicBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.musicBox .musicList {
+  width: 350px;
+  margin-right: 80px;
+}
+
+.musicBox .musicList .musicListTitle {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  line-height: 50px;
+  font-size: 20px;
+  border-top: 1px dotted #A9A9A9;
+  border-bottom: 1px dotted #A9A9A9;
+  margin-bottom: 30px;
+}
+
+.musicBox .musicList .musicContent {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px dotted #A9A9A9;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  color: #777777;
+  cursor: pointer;
+}
+
+.musicBox .musicList .musicContent .playIcon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 20px;
+  background: url(../../assets/playIcon.png);
+  margin: 0 15px;
+}
+
+.musicBox .musicList .musicContent .playIconSelect {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 20px;
+  background: url(../../assets/playIconOn.png);
+  margin: 0 15px;
+}
+
+.musicBox .musicList .musicContent .playName {
+  width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.musicBox .musicList .pagination ul {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.musicBox .musicList .pagination ul li {
+  list-style-type: none;
+}
+
+.musicBox .musicList .pagination ul li a {
+  text-decoration: none;
+}
+
+.musicBox .musicPlay {
+  width: 1210px;
+  height: 640px;
+  border: 1px dotted #A9A9A9;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.musicBox .musicPlay .musicPlayBox {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+}
+
+.song {
+  color: #FCD200;
+}
+/*# sourceMappingURL=Music_box.css.map */
