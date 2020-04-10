@@ -24,6 +24,12 @@
   left: 140px;
 }
 
+.header .headerBox .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .header .colorBarBox {
   width: 100%;
   position: absolute;
